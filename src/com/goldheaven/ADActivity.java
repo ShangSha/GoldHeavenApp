@@ -1,5 +1,6 @@
 package com.goldheaven;
 
+
 import net.youmi.android.AdManager;
 import net.youmi.android.diy.DiyManager;
 import net.youmi.android.diy.banner.DiyAdSize;
@@ -7,11 +8,15 @@ import net.youmi.android.diy.banner.DiyBanner;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 
 public class ADActivity extends Activity{
 
 	private static final String TAG = "ADActivity";
+	private Button showRecommendAppWallBtn;
+	
 	
 	@Override
     public void onCreate(Bundle savedInstanceState) {
@@ -30,6 +35,14 @@ public class ADActivity extends Activity{
         //将积分Banner加入到布局中
         adLayout.addView(banner);
         
-        DiyManager.showRecommendWall(ADActivity.this);
+        showRecommendAppWallBtn = (Button) findViewById(R.id.showRecommendAppWall);
+        showRecommendAppWallBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            	// 展示所有应用推荐墙
+            	DiyManager.showRecommendWall(ADActivity.this);
+            }
+        });
+        //DiyManager.showRecommendWall(ADActivity.this);
     }
 }
