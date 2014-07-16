@@ -50,6 +50,10 @@
 	        android:name="net.youmi.android.AdService"
 	        android:exported="false" >
 	    </service>
+	    <service
+    		android:name="net.youmi.android.ExpService"
+    		android:exported="false" >
+		</service>
 	    <receiver 
 	        android:name="net.youmi.android.AdReceiver" >
 	        <intent-filter>
