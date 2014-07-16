@@ -17,4 +17,6 @@
 	
 	<string name="size30sp">30sp</string>
 	<string name="size20sp">20sp</string>
+	
+	<string name="showApp">展示应用推荐墙</string>
 </resources>
