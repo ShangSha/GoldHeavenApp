@@ -2,8 +2,19 @@
 
     <string name="app_name">淘金天堂</string>
 	<string name="hello">淘金天堂</string>
+	<string name="action_settings">Settings</string>
+	
+	<string name="showSpot">展示插播广告</string>
+    <string name="showSmartBanner">展示SmartBanner</string>
+    <string name="plan">有米任务</string>
+	
+    <string name="zhuanQian">赚      钱</string>
+	<string name="jiFen">积      分</string>
+	
 	<string name="titleStatus">更新状态</string>
 	<string name="hintText">输入140个字的状态</string>
 	<string name="buttonUpdate">更新</string>
 	
+	<string name="size30sp">30sp</string>
+	<string name="size20sp">20sp</string>
 </resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#5a5a5a" >
+
+    <Button
+        android:id="@+id/showSpot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonbg"
+        android:text="@string/showSpot" />
+
+    <Button
+        android:id="@+id/diy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showSpot"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonbg"
+        android:text="@string/plan" />
+
+    <Button
+        android:id="@+id/jiFenBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/zhuanQianBtn"
+        android:layout_alignBottom="@+id/zhuanQianBtn"
+        android:layout_alignRight="@+id/diy"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttonBlueBg"
+        android:text="@string/jiFen" />
+    
+    <LinearLayout
+        android:id="@+id/adLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/zhuanQianBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adLayout"
+        android:layout_alignLeft="@+id/diy"
+        android:layout_marginBottom="62dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/buttonBlueBg"
+        android:text="@string/zhuanQian" />
+
+</RelativeLayout>
