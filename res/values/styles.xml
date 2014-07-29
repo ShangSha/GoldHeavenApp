@@ -1,24 +1,42 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="android:Theme">
+        <item name="android:windowTitleSize">40dip</item>
+        <item name="android:windowTitleBackgroundStyle">@style/MyTitleBackground</item>
+        <item name="android:textColor">#BB0000</item>   
+        <item name="android:layout_gravity">center</item>　
+        <item name="android:gravity">center</item>　
+        <!-- <item name="android:windowTitleStyle">@style/WindowTitle</item> -->
+    </style>
+    <!-- 自定义标题栏背景图 -->
+    <style name="MyTitleBackground" parent="android:TextAppearance.WindowTitle">
+        <item name="android:background">@drawable/topbarbg</item>
+    </style>
+    
+    
+    <!--
+    <style name="WindowTitle" >
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#aa0000</item>   
+    </style>
+    -->
+
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
+            backward-compatibility can go here.
         -->
-    </style>
-
-    <!-- Application theme. -->
-    <style name="AppTheme" parent="android:Theme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
     <style name="AppNoTitleBarTheme" parent="android:Theme.NoTitleBar">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    
+
 </resources>

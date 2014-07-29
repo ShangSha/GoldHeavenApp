@@ -7,6 +7,7 @@ import net.youmi.android.diy.banner.DiyAdSize;
 import net.youmi.android.diy.banner.DiyBanner;
 import net.youmi.android.offers.OffersManager;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -47,7 +48,10 @@ public class ADActivity extends Activity{
             public void onClick(View view) {
             	// 展示所有应用推荐墙
             	//DiyManager.showRecommendWall(ADActivity.this);
-            	
+            	Log.i(TAG, "点击divButton");
+				Intent intent = new Intent();
+				intent.setClass(ADActivity.this, IndexActivity.class);
+				startActivity(intent);
             }
         });
         //DiyManager.showRecommendWall(ADActivity.this);
