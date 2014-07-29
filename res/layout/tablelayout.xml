@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+	android:background="#5a5a5a"
+    >
+    
+	<TableLayout
+	    android:id="@+id/TableLayout01"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:collapseColumns="2"
+	    android:stretchColumns="1" >
+	    
+	    <TableRow
+	        android:id="@+id/TableRow01"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+	        
+	    	<TextView
+	    	    android:id="@+id/TextView01"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="用户名称" />
+	        
+	    	<EditView
+	    	    android:id="@+id/EditView01"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="admin" />
+	    	
+	    </TableRow>
+
+	    <TableRow
+	        android:id="@+id/TableRow01"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        >
+	        
+	    	<TextView
+	    	    android:id="@+id/TextView02"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="密码" />
+	        
+	    	<EditText
+	    	    android:id="@+id/EditView02"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="123" />
+	    	
+	    </TableRow>
+
+	    <TableRow 
+	    android:id="@id/TableRow01"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content">
+	        
+	    	<Button
+	    	    android:id="@+id/Button01"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="注册" />
+	        
+	    	<Button
+	    	    android:id="@+id/Button02"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="登录" />
+	    	
+	    </TableRow>
+	    	    	    
+	</TableLayout>  
+
+</LinearLayout>

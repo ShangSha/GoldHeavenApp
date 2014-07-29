@@ -1,8 +1,9 @@
 package com.goldheaven;
 
 
+import net.youmi.android.AdManager;
+import net.youmi.android.offers.OffersManager;
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -16,19 +17,40 @@ public class IndexActivity extends Activity{
 	@Override
     public void onCreate(Bundle savedInstanceState) {
 		Log.i(TAG, "启动淘金天堂首页");
-        super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);            
         setContentView(R.layout.index);
+      
         
-        Button diyBtn = (Button) findViewById(R.id.diy);
-		diyBtn.setOnClickListener(new OnClickListener() {
+        Button task1 = (Button) findViewById(R.id.task1);
+        task1.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				Log.i(TAG, "点击divButton");
-				Intent intent = new Intent();
-				intent.setClass(IndexActivity.this, ADActivity.class);
-				startActivity(intent);
+		
+				AdManager.getInstance(IndexActivity.this).init("ee6a63e204914eda",
+						"6f7e2a256359c1db", true );
+		        OffersManager.getInstance(IndexActivity.this).onAppLaunch();
+		        //展示全屏积分墙
+		        OffersManager.getInstance(IndexActivity.this).showOffersWall();		
+			}
+		});
+        
+        Button task2 = (Button) findViewById(R.id.task2);
+        task2.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View view) {
+		
+				AdManager.getInstance(IndexActivity.this).init("ee6a63e204914eda",
+						"6f7e2a256359c1db", true );
+		        OffersManager.getInstance(IndexActivity.this).onAppLaunch();
+		        //展示全屏积分墙
+		        OffersManager.getInstance(IndexActivity.this).showOffersWall();		
 			}
 		});
     }
 	
+	
+	@Override
+	protected void onDestroy() {
+		OffersManager.getInstance(this).onAppExit();
+	}
 }

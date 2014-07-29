@@ -12,49 +12,75 @@ public final class R {
     }
     public static final class drawable {
         public static final int buttonbg=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
+        public static final int buttonbgwhite=0x7f020001;
+        public static final int ic_launcher=0x7f020002;
+        public static final int topbarbg=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f070006;
+        public static final int Button01=0x7f07000d;
+        public static final int Button02=0x7f07000e;
+        public static final int EditView01=0x7f07000a;
+        public static final int EditView02=0x7f07000c;
+        public static final int TableLayout01=0x7f070007;
+        public static final int TableRow01=0x7f070008;
+        public static final int TextView01=0x7f070009;
+        public static final int TextView02=0x7f07000b;
+        public static final int Titile=0x7f070002;
+        public static final int action_settings=0x7f070010;
         public static final int adLayout=0x7f070001;
-        public static final int diy=0x7f070003;
-        public static final int jiFenBtn=0x7f070004;
+        public static final int jiFenBtn=0x7f070005;
         public static final int showRecommendAppWall=0x7f070000;
-        public static final int showSpot=0x7f070002;
-        public static final int zhuanQianBtn=0x7f070005;
+        public static final int task1=0x7f070003;
+        public static final int task2=0x7f070004;
+        public static final int textTile=0x7f07000f;
+        public static final int zhuanQianBtn=0x7f070006;
     }
     public static final class layout {
         public static final int ad=0x7f030000;
         public static final int index=0x7f030001;
+        public static final int linearlayout=0x7f030002;
+        public static final int relativelayout=0x7f030003;
+        public static final int tablelayout=0x7f030004;
+        public static final int title=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f060000;
     }
     public static final class string {
+        public static final int TableLayout01=0x7f04000d;
         public static final int action_settings=0x7f040002;
         public static final int app_name=0x7f040000;
-        public static final int buttonUpdate=0x7f04000a;
+        public static final int buttonUpdate=0x7f040009;
         public static final int hello=0x7f040001;
-        public static final int hintText=0x7f040009;
-        public static final int jiFen=0x7f040007;
-        public static final int plan=0x7f040005;
-        public static final int showApp=0x7f04000d;
-        public static final int showSmartBanner=0x7f040004;
-        public static final int showSpot=0x7f040003;
-        public static final int size20sp=0x7f04000c;
-        public static final int size30sp=0x7f04000b;
-        public static final int titleStatus=0x7f040008;
-        public static final int zhuanQian=0x7f040006;
+        public static final int hintText=0x7f040008;
+        public static final int jiFen=0x7f040006;
+        public static final int showApp=0x7f04000c;
+        public static final int size20sp=0x7f04000b;
+        public static final int size30sp=0x7f04000a;
+        public static final int task1=0x7f040003;
+        public static final int task2=0x7f040004;
+        public static final int titleStatus=0x7f040007;
+        public static final int zhuanQian=0x7f040005;
     }
     public static final class style {
         /** 
+    <style name="WindowTitle" >
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#aa0000</item>   
+    </style>
+    
+
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
     
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
+
+
         
 
         Base application theme for API 11+. This theme completely replaces
@@ -68,13 +94,16 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f050000;
+        public static final int AppBaseTheme=0x7f050002;
         /**  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppNoTitleBarTheme=0x7f050002;
+        public static final int AppNoTitleBarTheme=0x7f050003;
         /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
+ <item name="android:windowTitleStyle">@style/WindowTitle</item> 
          */
-        public static final int AppTheme=0x7f050001;
+        public static final int AppTheme=0x7f050000;
+        /**  自定义标题栏背景图 
+         */
+        public static final int MyTitleBackground=0x7f050001;
     }
 }
