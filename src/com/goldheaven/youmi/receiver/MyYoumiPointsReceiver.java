@@ -12,11 +12,6 @@ public class MyYoumiPointsReceiver extends PointsReceiver {
 		// 当 SDK 获取到用户赚取积分的订单时，会第一时间调用该方法通知您。
 		// 参数 EarnPointsOrderList 是一个积分订单列表，您可以在这里处理积分详细订单。
 		  
-		// 积分墙配置检查（没有使用“通过 SDK 获取积分订单”功能）：
-       // boolean isSuccess = OffersManager.getInstance(context).checkOffersAdConfig();
-
-        // 积分墙配置检查（使用“通过 SDK 获取积分订单”功能）：
-        boolean isSuccess = OffersManager.getInstance(context).checkOffersAdConfig(true);
 	}
 
 	@Override
