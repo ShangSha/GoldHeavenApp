@@ -5,6 +5,17 @@
     android:background="@android:color/white"
     android:orientation="vertical" >
 
+    <TextView
+        android:id="@+id/UserTitile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonbg"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="@string/youmi_userpoint_title"
+        android:textColor="@android:color/black"
+        android:textSize="12pt" />
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -12,40 +23,59 @@
         android:orientation="vertical" >
 
         <TextView
-            android:id="@+id/Titile"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/user_youmi_jifen_word"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/user_youmi_point"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"    
+            android:text="@string/zero"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="20pt" />
+    </LinearLayout>
+
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@android:color/background_dark" >
+
+        <TextView
+            android:id="@+id/zhifubao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
             android:background="@drawable/buttonbg"
             android:gravity="center_horizontal"
-            android:text="@string/app_name"
-            android:textColor="@android:color/black"
-            android:textSize="12pt" 
-            android:padding="5dp"/>
-
-        <Button
-            android:id="@+id/task1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-			android:layout_marginLeft="20dp"
-			android:layout_marginRight="20dp"
-            android:background="@drawable/buttonbg"
-            android:text="@string/task1"
+            android:text="@string/zhifubao"
             android:textColor="@android:color/white"
             android:textSize="15pt" />
 
-        <Button
-            android:id="@+id/task2"
-            android:layout_width="fill_parent"
+        <TextView
+            android:id="@+id/qq"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:layout_margin="20dp"
-    
             android:background="@drawable/buttonbg"
-            android:text="@string/task2"
+            android:gravity="center_horizontal"
+            android:text="@string/qq"
             android:textColor="@android:color/white"
             android:textSize="15pt" />
     </LinearLayout>
-
+    
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -54,24 +84,24 @@
         android:orientation="horizontal" >
 
         <TextView
-            android:id="@+id/jiFenBtn"
+            android:id="@+id/zhuanQian"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/buttonbg"
             android:gravity="center_horizontal"
-            android:text="@string/jiFen"
+            android:text="@string/zhuanQian"
             android:textColor="@android:color/white"
             android:textSize="15pt" />
 
         <TextView
-            android:id="@+id/zhuanQianBtn"
+            android:id="@+id/jiFen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/buttonbgwhite"
             android:gravity="center_horizontal"
-            android:text="@string/zhuanQian"
+            android:text="@string/jiFen"
             android:textColor="@android:color/holo_blue_light"
             android:textSize="15pt" />
     </LinearLayout>

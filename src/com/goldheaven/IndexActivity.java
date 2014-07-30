@@ -18,7 +18,7 @@ public class IndexActivity extends Activity{
     public void onCreate(Bundle savedInstanceState) {
 		Log.i(TAG, "启动淘金天堂首页");
         super.onCreate(savedInstanceState);            
-        setContentView(R.layout.index);
+        setContentView(R.layout.youmi);
       
         
         Button task1 = (Button) findViewById(R.id.task1);

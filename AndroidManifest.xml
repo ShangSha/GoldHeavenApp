@@ -24,7 +24,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppNoTitleBarTheme" >
         
-        <activity android:name=".IndexActivity"
+        <activity android:name=".youmi.YoumiActivity"
                   android:label="@string/app_name"
                   android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize">
             <intent-filter>
@@ -33,12 +33,23 @@
             </intent-filter>
         </activity>
         
+        
+        <activity
+            android:name=".youmi.YoumiUserPointActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" >
+
+        </activity>
+        
         <activity
             android:name=".ADActivity"
             android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" >
 
         </activity>
-        
+        <activity
+            android:name=".IndexActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" >
+
+        </activity>
         
         <!-- 添加必须的组件 -->
         <activity

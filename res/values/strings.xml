@@ -1,8 +1,7 @@
 <resources>
 
     <string name="app_name">淘金天堂</string>
-	<string name="hello">淘金天堂</string>
-	<string name="action_settings">Settings</string>
+	<string name="youmi_userpoint_title">兑         奖</string>
 	
 	<string name="task1">任务一</string>
     <string name="task2">任务二</string>
@@ -10,17 +9,19 @@
     <string name="zhuanQian">赚      钱</string>
 	<string name="jiFen">积      分</string>
 	
+	<string name="user_youmi_jifen_word">总积分(只统计有米积分墙)</string>
+	<string name="qq">QQ兑奖</string>
+	<string name="zhifubao">支付宝</string>
+	
+	
+	
+	<string name="zero">0</string>
+	<string name="action_settings">Settings</string>
 	<string name="titleStatus">更新状态</string>
 	<string name="hintText">输入140个字的状态</string>
-	<string name="buttonUpdate">更新</string>
-	
+	<string name="buttonUpdate">更新</string>	
 	<string name="size30sp">30sp</string>
-	<string name="size20sp">20sp</string>
-	
+	<string name="size20sp">20sp</string>	
 	<string name="showApp">展示应用推荐墙</string>
-	
-	
-	
-	
 	<string name="TableLayout01">展示应用推荐墙</string>
 </resources>
