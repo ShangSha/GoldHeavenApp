@@ -74,7 +74,7 @@
     		android:exported="false" >
 		</receiver>
         <receiver
-            android:name="MyPointsReceiver"
+            android:name="com.goldheaven.youmi.receiver.MyYoumiPointsReceiver"
             android:exported="false" >
             <intent-filter>
                 <action android:name="ep_ee6a63e204914eda" />
