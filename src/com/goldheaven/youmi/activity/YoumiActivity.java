@@ -68,6 +68,9 @@ public class YoumiActivity extends Activity{
 			}
 		});
         
+        
+        AdManager.getInstance(YoumiActivity.this).setUserDataCollect(true);
+		boolean isSuccess = OffersManager.getInstance(YoumiActivity.this).checkOffersAdConfig(true);
     }
 	
 	

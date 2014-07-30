@@ -70,6 +70,10 @@
             </intent-filter>
         </receiver>
         <receiver
+    		android:name="net.youmi.android.offers.OffersReceiver"
+    		android:exported="false" >
+		</receiver>
+        <receiver
             android:name="MyPointsReceiver"
             android:exported="false" >
             <intent-filter>
