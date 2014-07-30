@@ -1,17 +1,28 @@
 package com.goldheaven.youmi.receiver;
 
 import android.content.Context;
+import android.util.Log;
+import net.youmi.android.offers.EarnPointsOrderInfo;
 import net.youmi.android.offers.EarnPointsOrderList;
 import net.youmi.android.offers.OffersManager;
 import net.youmi.android.offers.PointsReceiver;
 
 public class MyYoumiPointsReceiver extends PointsReceiver {
-
+	private static final String TAG = "MyYoumiPointsReceiver";
+	
 	@Override
 	protected void onEarnPoints(Context context, EarnPointsOrderList list) {
 		// 当 SDK 获取到用户赚取积分的订单时，会第一时间调用该方法通知您。
 		// 参数 EarnPointsOrderList 是一个积分订单列表，您可以在这里处理积分详细订单。
-		  
+		if(list!=null && !list.isEmpty()){
+			int size = list.size();
+			for (int i = 0; i < size; i++) {
+				EarnPointsOrderInfo order = list.get(i);
+				Log.i(TAG, order.getCustomUserID());
+			}
+		}
+		
+		
 	}
 
 	@Override
