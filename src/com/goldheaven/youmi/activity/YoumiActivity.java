@@ -1,4 +1,4 @@
-package com.goldheaven.youmi;
+package com.goldheaven.youmi.activity;
 
 
 import net.youmi.android.AdManager;

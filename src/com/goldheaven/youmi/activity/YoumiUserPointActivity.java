@@ -1,7 +1,9 @@
-package com.goldheaven.youmi;
+package com.goldheaven.youmi.activity;
 
 import net.youmi.android.AdManager;
 import net.youmi.android.offers.OffersManager;
+import net.youmi.android.offers.PointsChangeNotify;
+import net.youmi.android.offers.PointsManager;
 
 import com.goldheaven.R;
 
@@ -14,9 +16,11 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class YoumiUserPointActivity  extends Activity{
+public class YoumiUserPointActivity  extends Activity implements PointsChangeNotify{
 	
 	private static final String TAG = "YouMiUserPointActivity";
+	
+	private TextView userYoumiPoint;
 	
 	@Override
     public void onCreate(Bundle savedInstanceState) {
@@ -24,10 +28,12 @@ public class YoumiUserPointActivity  extends Activity{
         super.onCreate(savedInstanceState);            
         setContentView(R.layout.youmi_userpoint);
       
-        TextView userYoumiPoint =  (TextView) findViewById(R.id.user_youmi_point);
-
-		userYoumiPoint.setText("122");
+        userYoumiPoint =  (TextView) findViewById(R.id.user_youmi_point);
+        int myPointBalance = PointsManager.getInstance(this).queryPoints();
+		userYoumiPoint.setText(myPointBalance+"");
         
+		PointsManager.getInstance(this).registerNotify(this);
+		
         TextView text =  (TextView) findViewById(R.id.zhuanQian);
         text.setClickable(true);
         text.setFocusable(true);
@@ -37,8 +43,7 @@ public class YoumiUserPointActivity  extends Activity{
 				Log.i(TAG, "点击进入有米任务主页");
 				Intent intent = new Intent();
 				intent.setClass(YoumiUserPointActivity.this, YoumiActivity.class);
-				startActivity(intent);
-				
+				startActivity(intent);				
 			}
 		});
         
@@ -47,6 +52,12 @@ public class YoumiUserPointActivity  extends Activity{
 	
 	@Override
 	protected void onDestroy() {
-		
+		PointsManager.getInstance(this).unRegisterNotify(this);
+	}
+
+
+	@Override
+	public void onPointBalanceChange(int pointsBalance) {
+		userYoumiPoint.setText(pointsBalance+"");
 	}
 }
