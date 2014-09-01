@@ -2,6 +2,8 @@
 
     <string name="app_name">淘金天堂</string>
 	<string name="youmi_userpoint_title">兑         奖</string>
+	<string name="youmi_alipay_title">兑奖-支付宝</string>
+	<string name="youmi_qqpay_title">兑奖-QQ</string>
 	
 	<string name="task1">任务一</string>
     <string name="task2">任务二</string>
@@ -11,9 +13,13 @@
 	
 	<string name="user_youmi_jifen_word">总积分(只统计有米积分墙)</string>
 	<string name="qq">QQ兑奖</string>
-	<string name="zhifubao">支付宝</string>
+	<string name="alipay">支付宝</string>
 	
+	<string name="back">返回</string>
+	<string name="confirm">确认</string>
 	
+	<string name="alipay_message">请输入您要转入的支付宝账号:</string>
+	<string name="qqpay_message">请输入您要转入Q币的qq账号:</string>
 	
 	<string name="zero">0</string>
 	<string name="action_settings">Settings</string>

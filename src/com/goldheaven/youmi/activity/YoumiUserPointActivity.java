@@ -1,11 +1,11 @@
 package com.goldheaven.youmi.activity;
 
-import net.youmi.android.AdManager;
-import net.youmi.android.offers.OffersManager;
 import net.youmi.android.offers.PointsChangeNotify;
 import net.youmi.android.offers.PointsManager;
 
 import com.goldheaven.R;
+import com.goldheaven.pay.activity.AlipayActivity;
+import com.goldheaven.pay.activity.QQPayActivity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,7 +13,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.TextView;
 
 public class YoumiUserPointActivity  extends Activity implements PointsChangeNotify{
@@ -47,6 +46,32 @@ public class YoumiUserPointActivity  extends Activity implements PointsChangeNot
 			}
 		});
         
+        TextView alipay =  (TextView) findViewById(R.id.alipay);
+        alipay.setClickable(true);
+        alipay.setFocusable(true);
+        alipay.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				Log.i(TAG, "µã»÷Ö§¸¶±¦¶Ò½±Ò³Ãæ");
+				Intent intent = new Intent();
+				intent.setClass(YoumiUserPointActivity.this, AlipayActivity.class);
+				startActivity(intent);				
+			}
+		});
+        
+        TextView qq =  (TextView) findViewById(R.id.qq);
+        qq.setClickable(true);
+        qq.setFocusable(true);
+        qq.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				Log.i(TAG, "µã»÷qq¶Ò½±Ò³Ãæ");
+				Intent intent = new Intent();
+				intent.setClass(YoumiUserPointActivity.this, QQPayActivity.class);
+				startActivity(intent);				
+			}
+		});
+              
     }
 	
 	

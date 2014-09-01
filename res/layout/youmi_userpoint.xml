@@ -52,14 +52,14 @@
         android:background="@android:color/darker_gray" >
 
         <TextView
-            android:id="@+id/zhifubao"
+            android:id="@+id/alipay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_margin="20dp"
             android:background="@drawable/buttonbg"
             android:gravity="center_horizontal"
-            android:text="@string/zhifubao"
+            android:text="@string/alipay"
             android:textColor="@android:color/white"
             android:textSize="15pt" />
 

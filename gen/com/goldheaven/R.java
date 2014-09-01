@@ -23,20 +23,24 @@ public final class R {
         public static final int EditView02=0x7f070007;
         public static final int TableLayout01=0x7f070002;
         public static final int TableRow01=0x7f070003;
+        public static final int TextView=0x7f070011;
         public static final int TextView01=0x7f070004;
         public static final int TextView02=0x7f070006;
         public static final int Titile=0x7f07000b;
         public static final int UserTitile=0x7f070010;
-        public static final int action_settings=0x7f070014;
+        public static final int action_settings=0x7f070018;
         public static final int adLayout=0x7f070001;
+        public static final int alipay=0x7f070016;
+        public static final int alipayEditView=0x7f070012;
+        public static final int back=0x7f070013;
+        public static final int confirm=0x7f070014;
         public static final int jiFen=0x7f07000f;
-        public static final int qq=0x7f070013;
+        public static final int qq=0x7f070017;
         public static final int showRecommendAppWall=0x7f070000;
         public static final int task1=0x7f07000c;
         public static final int task2=0x7f07000d;
         public static final int textTile=0x7f07000a;
-        public static final int user_youmi_point=0x7f070011;
-        public static final int zhifubao=0x7f070012;
+        public static final int user_youmi_point=0x7f070015;
         public static final int zhuanQian=0x7f07000e;
     }
     public static final class layout {
@@ -46,30 +50,38 @@ public final class R {
         public static final int tablelayout=0x7f030003;
         public static final int title=0x7f030004;
         public static final int youmi=0x7f030005;
-        public static final int youmi_userpoint=0x7f030006;
+        public static final int youmi_alipay=0x7f030006;
+        public static final int youmi_qqpay=0x7f030007;
+        public static final int youmi_userpoint=0x7f030008;
     }
     public static final class menu {
         public static final int main=0x7f060000;
     }
     public static final class string {
-        public static final int TableLayout01=0x7f040011;
-        public static final int action_settings=0x7f04000a;
+        public static final int TableLayout01=0x7f040017;
+        public static final int action_settings=0x7f040010;
+        public static final int alipay=0x7f04000a;
+        public static final int alipay_message=0x7f04000d;
         public static final int app_name=0x7f040000;
-        public static final int buttonUpdate=0x7f04000d;
-        public static final int hintText=0x7f04000c;
-        public static final int jiFen=0x7f040005;
-        public static final int qq=0x7f040007;
-        public static final int showApp=0x7f040010;
-        public static final int size20sp=0x7f04000f;
-        public static final int size30sp=0x7f04000e;
-        public static final int task1=0x7f040002;
-        public static final int task2=0x7f040003;
-        public static final int titleStatus=0x7f04000b;
-        public static final int user_youmi_jifen_word=0x7f040006;
+        public static final int back=0x7f04000b;
+        public static final int buttonUpdate=0x7f040013;
+        public static final int confirm=0x7f04000c;
+        public static final int hintText=0x7f040012;
+        public static final int jiFen=0x7f040007;
+        public static final int qq=0x7f040009;
+        public static final int qqpay_message=0x7f04000e;
+        public static final int showApp=0x7f040016;
+        public static final int size20sp=0x7f040015;
+        public static final int size30sp=0x7f040014;
+        public static final int task1=0x7f040004;
+        public static final int task2=0x7f040005;
+        public static final int titleStatus=0x7f040011;
+        public static final int user_youmi_jifen_word=0x7f040008;
+        public static final int youmi_alipay_title=0x7f040002;
+        public static final int youmi_qqpay_title=0x7f040003;
         public static final int youmi_userpoint_title=0x7f040001;
-        public static final int zero=0x7f040009;
-        public static final int zhifubao=0x7f040008;
-        public static final int zhuanQian=0x7f040004;
+        public static final int zero=0x7f04000f;
+        public static final int zhuanQian=0x7f040006;
     }
     public static final class style {
         /** 

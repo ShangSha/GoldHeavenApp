@@ -38,6 +38,17 @@
             android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" >
         </activity>
         <activity
+            android:name="com.goldheaven.pay.activity.AlipayActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.goldheaven.pay.activity.QQPayActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" >
+        </activity>
+             
+        
+        
+        <activity
             android:name=".ADActivity"
             android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" >
         </activity>
